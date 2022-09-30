@@ -5,9 +5,9 @@ btn.addEventListener('click', function handleClick() {
   const initialText = 'Submit';
 
   if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-    btn.textContent = 'Sending...';
+    btn.innterHTML = 'Sending...';
   } else {
-    btn.textContent = initialText;
+    btn.innerHTML = initialText;
   }
 });
 
